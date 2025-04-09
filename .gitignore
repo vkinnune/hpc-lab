@@ -1,0 +1,39 @@
+# Ignore temporary system files
+*.swp
+*.swo
+*.bak
+*~
+
+# SSH keys or sensitive info
+*.pem
+*.key
+*.crt
+*.pub
+
+# Editor/IDE junk
+.vscode/
+.idea/
+.DS_Store
+
+# ISO files
+iso/*.iso
+
+# Disk images and Proxmox VMs
+vm_templates/*.qcow2
+vm_templates/*.img
+
+# Diskless image outputs
+images/diskless/*
+diskless/images/*
+
+# PXE boot artifacts
+/var/www/html/preboot_execution_environment/*
+!scripts/
+
+# Ansible cache
+*.retry
+.ansible/
+
+# Logs
+*.log
+logs/
